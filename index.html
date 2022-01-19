@@ -9,20 +9,21 @@
     <title>ACSI</title>
 </head>
 <body >
-    
+    <section id="index"></section>
     <div class="menu" >
-        <a href=""><img src="src/images/ACSI Logos - Full Color.png" alt="Logo ACSI" class="img_principal"></a>
-        <ul class="menu_principal">
-            <li> <a href="">Inicio</a></li>
-            <li> <a href="">Servicios</a></li>
+        <a href=""><img src="src/images/ACSI Logos - Full Color.png" alt="Logo ACSI" class="img_principal" id="logoFullColor"></a>
+        <a href="#index"><img src="src/images/ACSI Logos - Blanco (1).png" alt="Logo ACSI 2" class="swap" id="logoBlanco"></a>
+        <ul class="menu_principal" id="menu">
+            <li> <a href="#index">Inicio</a></li>
+            <li> <a href="#services">Servicios</a></li>
             <li> <a href="">Clientes</a></li>
             <li> <a href="">Contacto</a></li>
         </ul>
     </div>
 
-    <div id="index" class="container_index">      
+    <div class="container_index">      
         <div class="bannerIndex">
-            <img src="src/images/image-index.png" alt="">
+            <img src="src/images/management.svg" alt="Gestión">
         </div>
         <div class="txt_index">
             <h1>Brindamos soluciones en la automatización de  empresas para diferentes tipos de industria.</h1>
@@ -32,6 +33,23 @@
                 <a href="https://api.whatsapp.com/send?phone=50247293226" target="_blank"><i class="fab fa-whatsapp fa-2x btn"></i></a>
             </div>
         </div>
+
+        <div class="down">
+            <a href="#services"><i class="fas fa-arrow-circle-down"></i></a>
+        </div>
     </div>
+
+    <div id="services" class="container_services">
+        <div class="card_services">
+            <img src="src/images/software.svg" alt="Gestión Comercial" class = "card_image">
+            <h1>Gestión Comercial</h1>
+        </div>
+        <div class="card_services">
+            <img src="src/images/finance.svg" alt="Gestión Administrativa" class = "card_image">
+            <h1>Gestión Administrativa</h1>
+        </div>
+    </div>
+
+    <script src="src/js/main.js"></script>
 </body>
 </html>
